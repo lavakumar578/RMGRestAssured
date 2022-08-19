@@ -15,7 +15,7 @@ public class CreateProjectGetAndVerifyInDB extends BaseAPIClass{
 	
 		@Test(priority = 0)
 		public void endToEndScenarioTest() throws SQLException {
-			CreateProjectDetails createProjectDetails=new CreateProjectDetails("Chaitra", "RMG-"+javaUtility.random(), "Created", 12);
+			CreateProjectDetails createProjectDetails=new CreateProjectDetails("Lava", "RMG-"+javaUtility.random(), "Created", 12);
 			
 			Response resp = given()
 							.body(createProjectDetails)

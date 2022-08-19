@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.*;
 public class UpdateProjectTest extends BaseAPIClass{
 	@Test(priority = 4)
 	public void updateProjectTest() {
-		CreateProjectDetails createProjectDetails=new CreateProjectDetails("Chaitra", "RMG-"+javaUtility.random(), "Created", 12);
+		CreateProjectDetails createProjectDetails=new CreateProjectDetails("LavaKumar", "RMG-"+javaUtility.random(), "Created", 12);
 		
 		Response resp = given()
 						.body(createProjectDetails)

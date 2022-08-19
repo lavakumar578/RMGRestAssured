@@ -12,7 +12,7 @@ import static io.restassured.RestAssured.*;
 public class DeleteSingleProjectTest extends BaseAPIClass {
 	@Test(priority = 10)
 	public void deleteSingleProjectTest() {
-CreateProjectDetails createProjectDetails=new CreateProjectDetails("Chaitra", "RMG-"+javaUtility.random(), "Created", 12);
+CreateProjectDetails createProjectDetails=new CreateProjectDetails("LavaKumar", "RMG-"+javaUtility.random(), "Created", 12);
 		
 		Response resp = given()
 						.body(createProjectDetails)

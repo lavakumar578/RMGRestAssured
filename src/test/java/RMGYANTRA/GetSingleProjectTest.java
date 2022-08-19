@@ -14,7 +14,7 @@ public class GetSingleProjectTest extends BaseAPIClass{
 	
 	@Test(priority = 5)
 	public void getSingleProjectTest() {
-CreateProjectDetails createProjectDetails=new CreateProjectDetails("Chaitra", "RMG-"+javaUtility.random(), "Created", 12);
+CreateProjectDetails createProjectDetails=new CreateProjectDetails("Lavakumar", "RMG-"+javaUtility.random(), "Created", 12);
 		
 		Response resp = given()
 						.body(createProjectDetails)
