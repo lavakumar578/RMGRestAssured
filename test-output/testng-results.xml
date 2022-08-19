@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="6" total="16" passed="10" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[----DB is connected--------]]>
+    </line>
+    <line>
+      <![CDATA[---------DB is disconnected--------]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2022-08-19T15:19:58 IST" name="Suite" finished-at="2022-08-19T15:20:03 IST" duration-ms="5081">
+    <groups>
+    </groups>
+    <test started-at="2022-08-19T15:19:58 IST" name="Test" finished-at="2022-08-19T15:20:03 IST" duration-ms="5081">
+      <class name="RMGYANTRA.UpdateProjectTest">
+        <test-method signature="updateProjectTest()[pri:4, instance:RMGYANTRA.UpdateProjectTest@543588e6]" started-at="2022-08-19T15:20:02 IST" name="updateProjectTest" finished-at="2022-08-19T15:20:02 IST" duration-ms="165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateProjectTest -->
+      </class> <!-- RMGYANTRA.UpdateProjectTest -->
+      <class name="RMGYANTRA.CreateProjectTest">
+        <test-method signature="createProjectTest()[pri:2, instance:RMGYANTRA.CreateProjectTest@58695725]" started-at="2022-08-19T15:20:01 IST" name="createProjectTest" finished-at="2022-08-19T15:20:02 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProjectTest -->
+      </class> <!-- RMGYANTRA.CreateProjectTest -->
+      <class name="RMGYANTRA.GetAllProjectTest">
+        <test-method signature="getProjectTest()[pri:3, instance:RMGYANTRA.GetAllProjectTest@18d87d80]" started-at="2022-08-19T15:20:01 IST" name="getProjectTest" finished-at="2022-08-19T15:20:01 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getProjectTest -->
+      </class> <!-- RMGYANTRA.GetAllProjectTest -->
+      <class name="RMGYANTRA.CreateProjectUsingJSONFileTest">
+        <test-method signature="createProjectUsingJSONFileTest()[pri:6, instance:RMGYANTRA.CreateProjectUsingJSONFileTest@f5acb9d]" started-at="2022-08-19T15:20:02 IST" name="createProjectUsingJSONFileTest" finished-at="2022-08-19T15:20:02 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProjectUsingJSONFileTest -->
+      </class> <!-- RMGYANTRA.CreateProjectUsingJSONFileTest -->
+      <class name="RMGYANTRA.CreateProjectGetAndVerifyInDB">
+        <test-method is-config="true" signature="beforeConfiguration()[pri:0, instance:RMGYANTRA.CreateProjectGetAndVerifyInDB@1a18644]" started-at="2022-08-19T15:19:57 IST" name="beforeConfiguration" finished-at="2022-08-19T15:19:58 IST" duration-ms="1336" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[----DB is connected--------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeConfiguration -->
+        <test-method signature="endToEndScenarioTest()[pri:0, instance:RMGYANTRA.CreateProjectGetAndVerifyInDB@1a18644]" started-at="2022-08-19T15:19:58 IST" name="endToEndScenarioTest" finished-at="2022-08-19T15:20:01 IST" duration-ms="3138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endToEndScenarioTest -->
+        <test-method is-config="true" signature="afterConfiguration()[pri:0, instance:RMGYANTRA.CreateProjectGetAndVerifyInDB@1a18644]" started-at="2022-08-19T15:20:03 IST" name="afterConfiguration" finished-at="2022-08-19T15:20:03 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[---------DB is disconnected--------]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterConfiguration -->
+      </class> <!-- RMGYANTRA.CreateProjectGetAndVerifyInDB -->
+      <class name="RMGYANTRA.BasicAuthTest">
+        <test-method signature="basicAuthTest()[pri:1, instance:RMGYANTRA.BasicAuthTest@2c35e847]" started-at="2022-08-19T15:20:02 IST" name="basicAuthTest" finished-at="2022-08-19T15:20:03 IST" duration-ms="843" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basicAuthTest -->
+      </class> <!-- RMGYANTRA.BasicAuthTest -->
+      <class name="RMGYANTRA.CreateProjectUsingMapTest">
+        <test-method signature="createProjectUsingMapTest()[pri:8, instance:RMGYANTRA.CreateProjectUsingMapTest@4fb3ee4e]" started-at="2022-08-19T15:20:02 IST" name="createProjectUsingMapTest" finished-at="2022-08-19T15:20:02 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProjectUsingMapTest -->
+      </class> <!-- RMGYANTRA.CreateProjectUsingMapTest -->
+      <class name="RMGYANTRA.DeleteSingleProjectTest">
+        <test-method signature="deleteSingleProjectTest()[pri:10, instance:RMGYANTRA.DeleteSingleProjectTest@7c24b813]" started-at="2022-08-19T15:20:02 IST" name="deleteSingleProjectTest" finished-at="2022-08-19T15:20:02 IST" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteSingleProjectTest -->
+      </class> <!-- RMGYANTRA.DeleteSingleProjectTest -->
+      <class name="RMGYANTRA.CreateProjectUsingJSONObjectTest">
+        <test-method signature="createProjectUsingJSONObjectTest()[pri:7, instance:RMGYANTRA.CreateProjectUsingJSONObjectTest@618425b5]" started-at="2022-08-19T15:20:01 IST" name="createProjectUsingJSONObjectTest" finished-at="2022-08-19T15:20:01 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createProjectUsingJSONObjectTest -->
+      </class> <!-- RMGYANTRA.CreateProjectUsingJSONObjectTest -->
+      <class name="RMGYANTRA.GetSingleProjectTest">
+        <test-method signature="getSingleProjectTest()[pri:5, instance:RMGYANTRA.GetSingleProjectTest@7bd4937b]" started-at="2022-08-19T15:20:03 IST" name="getSingleProjectTest" finished-at="2022-08-19T15:20:03 IST" duration-ms="118" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getSingleProjectTest -->
+      </class> <!-- RMGYANTRA.GetSingleProjectTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
