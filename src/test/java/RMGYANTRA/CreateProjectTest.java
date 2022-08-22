@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.*;
 
 import java.util.concurrent.TimeUnit;
 public class CreateProjectTest {
-	@Test(priority = 2)
+	@Test(priority = 3)
 	public void createProjectTest() {
 		baseURI="http://localhost";
 		port=8084;

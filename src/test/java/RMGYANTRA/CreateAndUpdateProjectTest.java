@@ -15,7 +15,7 @@ import static io.restassured.RestAssured.*;
 import java.util.concurrent.TimeUnit;
 
 public class CreateAndUpdateProjectTest extends BaseAPIClass{
-	@Test(priority = 4)
+	@Test(priority = 9)
 	public void updateProjectTest() {
 		CreateProjectDetails createProjectDetails=new CreateProjectDetails("LavaKumar", "RMG-"+javaUtility.random(), "Created", 12);
 		

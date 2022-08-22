@@ -13,7 +13,7 @@ import java.sql.SQLException;
 
 public class CreateProjectGetAndVerifyInDB extends BaseAPIClass{
 	
-		@Test(priority = 0)
+		@Test(priority = 2)
 		public void endToEndScenarioTest() throws SQLException {
 			CreateProjectDetails createProjectDetails=new CreateProjectDetails("Lava", "RMG-"+javaUtility.random(), "Created", 12);
 			

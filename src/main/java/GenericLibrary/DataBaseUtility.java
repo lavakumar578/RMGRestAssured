@@ -17,9 +17,9 @@ import io.restassured.response.Response;
  *
  */
 public class DataBaseUtility {
-	Driver driver;
-	Connection connection;
-	Statement statement;
+	public Driver driver;
+	public Connection connection;
+	public Statement statement;
 
 	/**
 	 * This method is used to get connection with database

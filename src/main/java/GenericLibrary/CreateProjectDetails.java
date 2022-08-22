@@ -6,10 +6,10 @@ package GenericLibrary;
  */
 public class CreateProjectDetails {
 
-	String createdBy;
-	String projectName;
-	String status;
-	int teamSize;
+	public String createdBy;
+	public String projectName;
+	public String status;
+	public int teamSize;
 	public CreateProjectDetails(String createdBy,String projectName,String status,int teamSize) {
 		this.createdBy=createdBy;
 		this.projectName=projectName;
