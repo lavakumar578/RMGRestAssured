@@ -3,13 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="RMGYANTRA.CreateProjectGetAndVerifyInDB">
+      <class name="RMGYANTRA.BasicAuthTest">
         <methods>
-          <include name="endToEndScenarioTest"/>
-          <include name="beforeConfiguration"/>
-          <include name="afterConfiguration"/>
+          <include name="basicAuthTest"/>
         </methods>
-      </class> <!-- RMGYANTRA.CreateProjectGetAndVerifyInDB -->
+      </class> <!-- RMGYANTRA.BasicAuthTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
