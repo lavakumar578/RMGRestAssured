@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RMGYANTRA.DeleteSingleProjectTest">
+      <class name="RMGYANTRA.CreateProjectTest">
         <methods>
-          <include name="deleteSingleProjectTest"/>
-          <include name="beforeConfiguration"/>
-          <include name="afterConfiguration"/>
+          <include name="createProjectTest"/>
         </methods>
-      </class> <!-- RMGYANTRA.DeleteSingleProjectTest -->
+      </class> <!-- RMGYANTRA.CreateProjectTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -8,10 +8,10 @@
       <class name="RMGYANTRA.GetAllProjectTest"/>
       <class name="RMGYANTRA.CreateProjectUsingJSONObjectTest"/>
       <class name="RMGYANTRA.CreateProjectTest"/>
-      <class name="RMGYANTRA.UpdateProjectTest"/>
+      <class name="RMGYANTRA.CreateAndUpdateProjectTest"/>
       <class name="RMGYANTRA.CreateProjectUsingJSONFileTest"/>
       <class name="RMGYANTRA.CreateProjectUsingMapTest"/>
-      <class name="RMGYANTRA.DeleteSingleProjectTest"/>
+      <class name="RMGYANTRA.CreateAndDeleteAProjectTest"/>
       <class name="RMGYANTRA.BasicAuthTest"/>
       <class name="RMGYANTRA.GetSingleProjectTest"/>
     </classes>

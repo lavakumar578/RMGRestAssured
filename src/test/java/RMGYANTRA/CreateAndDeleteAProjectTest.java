@@ -9,7 +9,7 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
-public class DeleteSingleProjectTest extends BaseAPIClass {
+public class CreateAndDeleteAProjectTest extends BaseAPIClass {
 	@Test(priority = 10)
 	public void deleteSingleProjectTest() {
 CreateProjectDetails createProjectDetails=new CreateProjectDetails("LavaKumar", "RMG-"+javaUtility.random(), "Created", 12);

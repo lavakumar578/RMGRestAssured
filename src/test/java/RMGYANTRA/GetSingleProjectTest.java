@@ -1,5 +1,7 @@
 package RMGYANTRA;
 
+import org.hamcrest.Matcher;
+import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import GenericLibrary.BaseAPIClass;
@@ -9,6 +11,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
+
+import java.util.concurrent.TimeUnit;
 
 public class GetSingleProjectTest extends BaseAPIClass{
 	
@@ -28,6 +32,6 @@ CreateProjectDetails createProjectDetails=new CreateProjectDetails("Lavakumar", 
 	System.out.println(proId);
 		baseURI="http://localhost";
 		port=8084;
-		when().get("/projects/"+proId).then().log().all();
+		when().get("/projects/"+proId).then().assertThat().statusCode(200).time(Matchers.lessThan(1500L),TimeUnit.MILLISECONDS).log().all();
 	}
 }

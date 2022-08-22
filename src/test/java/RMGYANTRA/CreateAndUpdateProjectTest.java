@@ -1,5 +1,6 @@
 package RMGYANTRA;
 
+import org.hamcrest.Matchers;
 import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
@@ -11,7 +12,9 @@ import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
 
-public class UpdateProjectTest extends BaseAPIClass{
+import java.util.concurrent.TimeUnit;
+
+public class CreateAndUpdateProjectTest extends BaseAPIClass{
 	@Test(priority = 4)
 	public void updateProjectTest() {
 		CreateProjectDetails createProjectDetails=new CreateProjectDetails("LavaKumar", "RMG-"+javaUtility.random(), "Created", 12);
@@ -33,6 +36,6 @@ public class UpdateProjectTest extends BaseAPIClass{
 		jobj.put("status", "On Going");
 		jobj.put("teamSize", 5);
 		given().body(jobj).contentType(ContentType.JSON).
-		when().put("/projects/"+proId).then().log().all();
+		when().put("/projects/"+proId).then().assertThat().statusCode(200).time(Matchers.lessThan(1500L),TimeUnit.MILLISECONDS).log().all();
 	}
 }

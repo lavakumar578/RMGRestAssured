@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="16" passed="10" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[----DB is connected--------]]>
@@ -8,84 +8,30 @@
       <![CDATA[---------DB is disconnected--------]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-08-19T17:35:20 IST" name="Suite" finished-at="2022-08-19T17:35:26 IST" duration-ms="6584">
+  <suite started-at="2022-08-22T10:31:12 IST" name="Default suite" finished-at="2022-08-22T10:31:16 IST" duration-ms="3797">
     <groups>
     </groups>
-    <test started-at="2022-08-19T17:35:20 IST" name="Test" finished-at="2022-08-19T17:35:26 IST" duration-ms="6584">
-      <class name="RMGYANTRA.UpdateProjectTest">
-        <test-method signature="updateProjectTest()[pri:4, instance:RMGYANTRA.UpdateProjectTest@543588e6]" started-at="2022-08-19T17:35:25 IST" name="updateProjectTest" finished-at="2022-08-19T17:35:25 IST" duration-ms="163" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateProjectTest -->
-      </class> <!-- RMGYANTRA.UpdateProjectTest -->
-      <class name="RMGYANTRA.CreateProjectTest">
-        <test-method signature="createProjectTest()[pri:2, instance:RMGYANTRA.CreateProjectTest@58695725]" started-at="2022-08-19T17:35:25 IST" name="createProjectTest" finished-at="2022-08-19T17:35:25 IST" duration-ms="116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProjectTest -->
-      </class> <!-- RMGYANTRA.CreateProjectTest -->
-      <class name="RMGYANTRA.GetAllProjectTest">
-        <test-method signature="getProjectTest()[pri:3, instance:RMGYANTRA.GetAllProjectTest@18d87d80]" started-at="2022-08-19T17:35:25 IST" name="getProjectTest" finished-at="2022-08-19T17:35:25 IST" duration-ms="45" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getProjectTest -->
-      </class> <!-- RMGYANTRA.GetAllProjectTest -->
-      <class name="RMGYANTRA.CreateProjectUsingJSONFileTest">
-        <test-method signature="createProjectUsingJSONFileTest()[pri:6, instance:RMGYANTRA.CreateProjectUsingJSONFileTest@f5acb9d]" started-at="2022-08-19T17:35:25 IST" name="createProjectUsingJSONFileTest" finished-at="2022-08-19T17:35:25 IST" duration-ms="103" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProjectUsingJSONFileTest -->
-      </class> <!-- RMGYANTRA.CreateProjectUsingJSONFileTest -->
-      <class name="RMGYANTRA.CreateProjectGetAndVerifyInDB">
-        <test-method is-config="true" signature="beforeConfiguration()[pri:0, instance:RMGYANTRA.CreateProjectGetAndVerifyInDB@1a18644]" started-at="2022-08-19T17:35:18 IST" name="beforeConfiguration" finished-at="2022-08-19T17:35:20 IST" duration-ms="1976" status="PASS">
+    <test started-at="2022-08-22T10:31:12 IST" name="Default test" finished-at="2022-08-22T10:31:16 IST" duration-ms="3797">
+      <class name="RMGYANTRA.GetSingleProjectTest">
+        <test-method is-config="true" signature="beforeConfiguration()[pri:0, instance:RMGYANTRA.GetSingleProjectTest@169e6180]" started-at="2022-08-22T10:31:11 IST" name="beforeConfiguration" finished-at="2022-08-22T10:31:12 IST" duration-ms="1590" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[----DB is connected--------]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeConfiguration -->
-        <test-method signature="endToEndScenarioTest()[pri:0, instance:RMGYANTRA.CreateProjectGetAndVerifyInDB@1a18644]" started-at="2022-08-19T17:35:20 IST" name="endToEndScenarioTest" finished-at="2022-08-19T17:35:25 IST" duration-ms="4906" status="PASS">
+        <test-method signature="getSingleProjectTest()[pri:5, instance:RMGYANTRA.GetSingleProjectTest@169e6180]" started-at="2022-08-22T10:31:12 IST" name="getSingleProjectTest" finished-at="2022-08-22T10:31:16 IST" duration-ms="3740" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- endToEndScenarioTest -->
-        <test-method is-config="true" signature="afterConfiguration()[pri:0, instance:RMGYANTRA.CreateProjectGetAndVerifyInDB@1a18644]" started-at="2022-08-19T17:35:27 IST" name="afterConfiguration" finished-at="2022-08-19T17:35:27 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- getSingleProjectTest -->
+        <test-method is-config="true" signature="afterConfiguration()[pri:0, instance:RMGYANTRA.GetSingleProjectTest@169e6180]" started-at="2022-08-22T10:31:16 IST" name="afterConfiguration" finished-at="2022-08-22T10:31:16 IST" duration-ms="10" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[---------DB is disconnected--------]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterConfiguration -->
-      </class> <!-- RMGYANTRA.CreateProjectGetAndVerifyInDB -->
-      <class name="RMGYANTRA.BasicAuthTest">
-        <test-method signature="basicAuthTest()[pri:1, instance:RMGYANTRA.BasicAuthTest@2c35e847]" started-at="2022-08-19T17:35:26 IST" name="basicAuthTest" finished-at="2022-08-19T17:35:26 IST" duration-ms="396" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- basicAuthTest -->
-      </class> <!-- RMGYANTRA.BasicAuthTest -->
-      <class name="RMGYANTRA.CreateProjectUsingMapTest">
-        <test-method signature="createProjectUsingMapTest()[pri:8, instance:RMGYANTRA.CreateProjectUsingMapTest@4fb3ee4e]" started-at="2022-08-19T17:35:25 IST" name="createProjectUsingMapTest" finished-at="2022-08-19T17:35:26 IST" duration-ms="106" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProjectUsingMapTest -->
-      </class> <!-- RMGYANTRA.CreateProjectUsingMapTest -->
-      <class name="RMGYANTRA.CreateProjectUsingJSONObjectTest">
-        <test-method signature="createProjectUsingJSONObjectTest()[pri:7, instance:RMGYANTRA.CreateProjectUsingJSONObjectTest@618425b5]" started-at="2022-08-19T17:35:25 IST" name="createProjectUsingJSONObjectTest" finished-at="2022-08-19T17:35:25 IST" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createProjectUsingJSONObjectTest -->
-      </class> <!-- RMGYANTRA.CreateProjectUsingJSONObjectTest -->
-      <class name="RMGYANTRA.DeleteSingleProjectTest">
-        <test-method signature="deleteSingleProjectTest()[pri:10, instance:RMGYANTRA.DeleteSingleProjectTest@7c24b813]" started-at="2022-08-19T17:35:26 IST" name="deleteSingleProjectTest" finished-at="2022-08-19T17:35:26 IST" duration-ms="154" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteSingleProjectTest -->
-      </class> <!-- RMGYANTRA.DeleteSingleProjectTest -->
-      <class name="RMGYANTRA.GetSingleProjectTest">
-        <test-method signature="getSingleProjectTest()[pri:5, instance:RMGYANTRA.GetSingleProjectTest@7bd4937b]" started-at="2022-08-19T17:35:26 IST" name="getSingleProjectTest" finished-at="2022-08-19T17:35:26 IST" duration-ms="282" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getSingleProjectTest -->
       </class> <!-- RMGYANTRA.GetSingleProjectTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
