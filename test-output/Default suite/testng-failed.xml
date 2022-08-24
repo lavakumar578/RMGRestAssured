@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="RMGYANTRA.CreateProjectTest">
+      <class name="RMGYANTRA.CreateProjectUsingJSONFileTest">
         <methods>
-          <include name="createProjectTest"/>
+          <include name="beforeConfiguration"/>
+          <include name="createProjectUsingJSONFileTest"/>
+          <include name="afterConfiguration"/>
         </methods>
-      </class> <!-- RMGYANTRA.CreateProjectTest -->
+      </class> <!-- RMGYANTRA.CreateProjectUsingJSONFileTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

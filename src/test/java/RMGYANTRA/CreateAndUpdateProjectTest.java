@@ -23,13 +23,11 @@ public class CreateAndUpdateProjectTest extends BaseAPIClass{
 						.body(createProjectDetails)
 						.contentType(ContentType.JSON)
 						.when()
-						.post(EndPoints.CreateProject);
+						.post(EndPoints.CREATEPROJECT);
 		
 		
 		//step 2: capture the project id from response
 	proId = restAssuredUtility.getJSONData(resp, "projectId");
-		baseURI="http://localhost";
-		port=8084;
 		JSONObject jobj=new JSONObject();
 		jobj.put("createdBy", "LK");
 		jobj.put("projectName", "TexStore");

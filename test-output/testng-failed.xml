@@ -3,11 +3,20 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="RMGYANTRA.BasicAuthTest">
+      <class name="RMGYANTRA.CreateProjectUsingJSONFileTest">
         <methods>
-          <include name="basicAuthTest"/>
+          <include name="beforeConfiguration"/>
+          <include name="createProjectUsingJSONFileTest"/>
+          <include name="afterConfiguration"/>
         </methods>
-      </class> <!-- RMGYANTRA.BasicAuthTest -->
+      </class> <!-- RMGYANTRA.CreateProjectUsingJSONFileTest -->
+      <class name="RMGYANTRA.CreateProjectGetAndVerifyInDB">
+        <methods>
+          <include name="endToEndScenarioTest"/>
+          <include name="beforeConfiguration"/>
+          <include name="afterConfiguration"/>
+        </methods>
+      </class> <!-- RMGYANTRA.CreateProjectGetAndVerifyInDB -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

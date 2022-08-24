@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import GenericLibrary.BaseAPIClass;
 import GenericLibrary.CreateProjectDetails;
 import GenericLibrary.EndPoints;
+import GenericLibrary.PropertiesUtility;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import static io.restassured.RestAssured.*;
@@ -21,7 +22,7 @@ public class CreateProjectGetAndVerifyInDB extends BaseAPIClass{
 							.body(createProjectDetails)
 							.contentType(ContentType.JSON)
 							.when()
-							.post(EndPoints.CreateProject);
+							.post(EndPoints.CREATEPROJECT);
 			
 			
 			//step 2: capture the project id from response
@@ -32,12 +33,12 @@ public class CreateProjectGetAndVerifyInDB extends BaseAPIClass{
 			given()
 			  .pathParam("pid", proId)
 			.when()
-			  .get(EndPoints.GetSingleProject)
+			  .get(EndPoints.GETSINGLEPROJECT)
 			.then().log().all();
 
 			
 //			Step 4: verify it in database
-			String query = "select * from project;";
+			String query = PropertiesUtility.getDataFromProperty("query");
 			String data = dataBaseUtility.executeQueryAndReturnData(query, 1, proId);
 			System.out.println(data);
 			

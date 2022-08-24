@@ -24,14 +24,13 @@ CreateProjectDetails createProjectDetails=new CreateProjectDetails("Lavakumar", 
 						.body(createProjectDetails)
 						.contentType(ContentType.JSON)
 						.when()
-						.post(EndPoints.CreateProject);
+						.post(EndPoints.CREATEPROJECT);
 		
 		
 		//step 2: capture the project id from response
 	proId = restAssuredUtility.getJSONData(resp, "projectId");
 	System.out.println(proId);
-		baseURI="http://localhost";
-		port=8084;
+		
 		when().get("/projects/"+proId).then().assertThat().statusCode(200).time(Matchers.lessThan(1500L),TimeUnit.MILLISECONDS).log().all();
 	}
 }

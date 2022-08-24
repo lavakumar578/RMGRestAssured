@@ -3,6 +3,7 @@ package GenericLibrary;
 import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.port;
 
+import java.io.IOException;
 import java.sql.SQLException;
 
 import org.testng.Reporter;
@@ -19,11 +20,15 @@ public class BaseAPIClass {
 	public JavaUtility javaUtility=new JavaUtility();
 	public RestAssuredUtility restAssuredUtility=new RestAssuredUtility();
 	public String proId;
+	public String BaseUri;
+	
 	@BeforeSuite
-	public void beforeConfiguration() throws SQLException {
+	public void beforeConfiguration() throws SQLException, IOException {
 		dataBaseUtility.connetToDataBase();
 		Reporter.log("----DB is connected--------",true);
-		baseURI = "http://localhost";
+		PropertiesUtility.openPropertyFile(ILocationPath.PROPERTYPATH);
+		String baseUri=PropertiesUtility.getDataFromProperty("baseURI");
+		baseURI = baseUri;
 		port = 8084;
 	}
 	

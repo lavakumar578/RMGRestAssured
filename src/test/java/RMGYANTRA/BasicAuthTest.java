@@ -7,21 +7,22 @@ import java.util.concurrent.TimeUnit;
 import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
+import GenericLibrary.BaseAPIClass;
 import GenericLibrary.ConstantUtility;
+import GenericLibrary.EndPoints;
+import GenericLibrary.PropertiesUtility;
 
-public class BasicAuthTest {
+public class BasicAuthTest extends BaseAPIClass{
 
 	@Test(priority = 1)
 	public void basicAuthTest() {
-		baseURI = "http://localhost";
-		port = 8084;
 		
 		given()
 		  .auth()
-		  .basic("rmgyantra", "rmgy@9999")
+		  .basic(PropertiesUtility.getDataFromProperty("username"), PropertiesUtility.getDataFromProperty("password"))
 		.when()
-		  .get("/login")
-		.then().assertThat().statusCode(202).time(Matchers.lessThan(1500L),TimeUnit.MILLISECONDS).log().all();
+		  .get(EndPoints.AUTHENTION)
+		.then().assertThat().statusCode(202).time(Matchers.lessThan(2000L),TimeUnit.MILLISECONDS).log().all();
 	}
 	
 }

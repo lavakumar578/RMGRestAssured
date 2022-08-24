@@ -6,9 +6,10 @@ package GenericLibrary;
  *
  */
 public interface EndPoints{
-	String CreateProject = "/addProject";
-	String GetProjects = "/projects";
-	String UpdateProject = "/projects/";
-	String DeleteProject = "/projects/";
-	String GetSingleProject = "/projects/{pid}";
+	String AUTHENTION="/login";
+	String CREATEPROJECT = "/addProject";
+	String GETPROJECTS = "/projects";
+	String UPDATEPROJECT= "/projects/";
+	String DELETEPROJECT = "/projects/";
+	String GETSINGLEPROJECT = "/projects/{pid}";
 }

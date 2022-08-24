@@ -1,5 +1,6 @@
 package RMGYANTRA;
 
+import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
 import GenericLibrary.BaseAPIClass;
@@ -9,6 +10,8 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 
 import static io.restassured.RestAssured.*;
+
+import java.util.concurrent.TimeUnit;
 public class CreateAndDeleteAProjectTest extends BaseAPIClass {
 	@Test(priority = 10)
 	public void deleteSingleProjectTest() {
@@ -18,16 +21,13 @@ CreateProjectDetails createProjectDetails=new CreateProjectDetails("LavaKumar", 
 						.body(createProjectDetails)
 						.contentType(ContentType.JSON)
 						.when()
-						.post(EndPoints.CreateProject);
+						.post(EndPoints.CREATEPROJECT);
 		
 		
 		//step 2: capture the project id from response
 	proId = restAssuredUtility.getJSONData(resp, "projectId");
 		System.out.println(proId);
-		baseURI="http://localhost";
-		port=8084;
-		
 		when().delete("/projects/"+proId)
-		.then().statusCode(204).log().all();
+		.then().statusCode(204).time(Matchers.lessThan(2000L),TimeUnit.MILLISECONDS).log().all();
 	}
 }

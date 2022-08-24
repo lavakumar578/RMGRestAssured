@@ -1,16 +1,19 @@
 package RMGYANTRA;
 
 import java.util.HashMap;
+import java.util.concurrent.TimeUnit;
 
+import org.hamcrest.Matchers;
 import org.testng.annotations.Test;
 
+import GenericLibrary.BaseAPIClass;
 import GenericLibrary.EndPoints;
 import GenericLibrary.JavaUtility;
 import io.restassured.http.ContentType;
 
 import static io.restassured.RestAssured.*;
 
-public class CreateProjectUsingMapTest {
+public class CreateProjectUsingMapTest extends BaseAPIClass {
 	
 	@Test(priority = 8)
 	public void createProjectUsingMapTest() {
@@ -26,8 +29,8 @@ public class CreateProjectUsingMapTest {
 		jobj.put("teamSize", "5");
 		
 		given().body(jobj).contentType(ContentType.JSON)
-		.when().post(EndPoints.CreateProject)
-		.then().assertThat().statusCode(201).log().all();
+		.when().post(EndPoints.CREATEPROJECT)
+		.then().assertThat().statusCode(201).time(Matchers.lessThan(2000L),TimeUnit.MILLISECONDS).log().all();
 	}
 	
 }
